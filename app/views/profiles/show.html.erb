@@ -1,11 +1,11 @@
 <% if current_user.id == @profile.user_id %>
 <h1>Welcome, <%= current_user.profile.user_name %>!</h1>
-<%= image_tag(@profile.avatar) %>
+<%= image_tag(@profile.avatar(:medium)) %>
 <%= link_to "Edit your profile", edit_profile_path(@profile) %>
 <% else %>
 
 <h1><%= @profile.user_name %>'s Profile</h1>
-<%= image_tag(@profile.avatar) %>
+<%= image_tag(@profile.avatar(:medium)) %>
 <% end %>
 
 <h2>this one will have user avatar, recent HiCoo's and comments</h2>
