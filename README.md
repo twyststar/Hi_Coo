@@ -1,9 +1,11 @@
-# README
+![Image of HiCoo](https://d30y9cdsu7xlg0.cloudfront.net/png/1112469-200.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Hi Coo
 
-Things you may want to cover:
+## Ruby/Rails Capstone
+
+## Project and README in progress
+
 
 * Ruby version
 
