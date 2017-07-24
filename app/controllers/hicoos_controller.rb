@@ -39,6 +39,6 @@ class HicoosController < ApplicationController
   private
 
   def hicoo_params
-    params.require(:hicoo).permit(:line_one, :line_two, :line_three, :author, :profile_id)
+    params.require(:hicoo).permit(:line_one, :line_two, :line_three, :author, :profile_id, :title)
   end
 end
