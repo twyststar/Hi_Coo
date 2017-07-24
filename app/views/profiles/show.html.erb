@@ -1,0 +1,10 @@
+<% if current_user == @profile.user %>
+<h1>Welcome, <%= current_user.user_name %>!</h1>
+
+<% else %>
+
+<h1><%= @profile.user_name %>'s Profile</h1>
+
+<% end %>
+
+<h2>this one will have user avatar, recent HiCoo's and comments</h2>

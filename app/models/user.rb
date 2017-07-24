@@ -6,10 +6,10 @@ class User < ApplicationRecord
 
   has_one :profile
 
-  # after_create :user_profile
-  #  def user_profile
-  #    @user = User.last
-  #    @profile = Profile.create!(user_id: @user.id)
-  #  end
+  after_create :user_profile
+   def user_profile
+     @user = User.last
+     @profile = Profile.create!(user_id: @user.id)
+   end
 
 end
