@@ -1,0 +1,2 @@
+module HicooHelper
+end

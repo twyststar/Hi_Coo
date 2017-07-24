@@ -1,1 +1,10 @@
 <h2>Detail page for a specific haiku. All comments, add comment. </h2>
+
+<div class="well">
+  <h2><%= @hicoo.line_one %></h2>
+  <h2><%= @hicoo.line_two %></h2>
+  <h2><%= @hicoo.line_three %></h2>
+</div>
+<% if current_user.profile.id == @hicoo.profile_id %>
+<%= link_to "Edit your Hi Coo", edit_hicoo_path(@hicoo) %>
+<% end %>

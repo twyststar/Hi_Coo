@@ -32,6 +32,8 @@
       </ul>
     </div>
     <div class="container main">
+      <%= flash[:alert] %>
+      <%= flash[:notice] %>
       <%= yield %>
     </div>
 
