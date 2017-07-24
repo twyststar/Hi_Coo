@@ -4,12 +4,14 @@
     * Add admin boolean
   * Profile - belongs to User
     * Username
-    * Avatar
+    * Avatar - paperclip
     * Hi-Quote
   * Haikus - belongs to Profile
     * poem - validations for haiku 5-7-5
+    * poet
   * Comments - belongs to Haikus, belongs to Profile - polymorphic?
     * body
+    * author
   * Categories/tags - belong to haiku
 
 ## Validations
@@ -25,3 +27,7 @@
 
 
 ## Stretch
+
+  * Seeds for beginning haiku
+  * Animations
+  * Photos to certain categories?

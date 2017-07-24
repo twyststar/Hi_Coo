@@ -9,6 +9,28 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+        <% if current_user && current_user.admin %>
+          <li><%= link_to 'Admin', rails_admin_path %></li>
+        <% end %>
+        <% if current_user %>
+          <li><%= current_user.email%>, Admin: <%=current_user.admin  %></li>
+        <% end %>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Home", home_index_path %></li>
+          <% if current_user %>
+          <li><%= link_to 'My Profile', user_path(current_user.id) %></li>
+          <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
+          <% else %>
+          <li><%= link_to 'Login', new_user_session_path %></li>
+          <% end %>
+      </ul>
+    </div>
+    <div class="container main">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
