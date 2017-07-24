@@ -8,4 +8,11 @@
 <%= image_tag(@profile.avatar(:medium)) %>
 <% end %>
 
+<% if @profile.hi_quote %>
+  <div class="well">
+    <p>(The Hi-Quote is not strictly 5-7-5 haiku, but the poet's take on the form, or translated traditional Japanese haiku)</p>
+    <h4>" <%= @profile.hi_quote %>"</h4>
+  </div>
+<% else %>
+<% end %>
 <h2>this one will have user avatar, recent HiCoo's and comments</h2>

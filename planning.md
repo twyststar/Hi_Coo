@@ -27,7 +27,10 @@
 
 
 ## Stretch
-
+  * Likes as join between users and hi-coos?
   * Seeds for beginning haiku
   * Animations
   * Photos to certain categories?
+
+##Current notes:
+ fix hi-quote into 3 columns

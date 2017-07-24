@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170724174529) do
+ActiveRecord::Schema.define(version: 20170724185508) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20170724174529) do
 
   create_table "profiles", force: :cascade do |t|
     t.string "user_name"
-    t.string "hi_qoute"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -35,6 +34,7 @@ ActiveRecord::Schema.define(version: 20170724174529) do
     t.string "avatar_content_type"
     t.integer "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string "hi_quote"
   end
 
   create_table "users", force: :cascade do |t|
