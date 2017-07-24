@@ -10,7 +10,7 @@ gem 'devise'
 gem "paperclip", "~> 5.0.0"
 gem 'cancancan'
 gem 'rails_admin', '>= 1.0.0.rc'
-
+gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'sprockets-rails', '~> 3.2'
 gem 'bootstrap-sass', '~> 3.3.6'
 
