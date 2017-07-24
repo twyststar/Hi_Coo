@@ -1,1 +1,15 @@
 <h2>This page will show all Haikus, possibly with filter options for time created, most popular etc.</h2>
+<% if @hicoos.any? %>
+  <% @hicoos.each do |coo| %>
+  <div class="well">
+    <div class="right">
+      <h4><%= coo.author %></h4>
+      <%= image_tag(coo.profile.avatar(:thumb)) %>
+    </div>
+    <h2><%= coo.line_one %></h2>
+    <h2><%= coo.line_two %></h2>
+    <h2><%= coo.line_three %></h2>
+
+  </div>
+  <% end %>
+<% end %>
