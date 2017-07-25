@@ -88,3 +88,20 @@ https://wordsapiv1.p.mashape.com/words/incredible/syllables,
     "X-Mashape-Key" => "KEYHERE",
     "Accept" => "application/json"
   }
+
+<!-- Api call for syllable count example. Refactored to use ruby_rhymes gem instead, but keeping a note of it here in case it is useful later.
+  # count = 0
+  # all_words = line_two.split(' ')
+  # all_words.each do |word|
+  #   to_add = (JSON.parse(RestClient.get("https://wordsapiv1.p.mashape.com/words/#{word}/syllables", headers={
+  #     "X-Mashape-Key" => ENV["X-Mashape-Key"],
+  #     "Accept" => "application/json"
+  #     }))['syllables']['count']).to_i
+  #     puts word
+  #     puts to_add
+  #     if to_add == 0
+  #       count += 1
+  #     end
+  #     count += to_add
+  # end
+  # if (count < 6) || (count > 8) -->
