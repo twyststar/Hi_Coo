@@ -57,7 +57,11 @@
 
 - [x] config for secure key storage
 
-- [ ]
+- [x] edit hi coo display to contain content properly
+
+- [ ] add time created/updated to display
+
+- [ ] add validation for presence on hi coo lines
 
 - [x] make call for syllable count
 
@@ -68,6 +72,7 @@
 - [ ] add comments db
 
 - [ ] add comments interactions with hi coo
+
 
 
 
