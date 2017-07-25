@@ -8,7 +8,9 @@
 
         * Username
         * Avatar - paperclip
-        * Hi-Quote
+        * Hi-Quote_line_one
+        * Hi-Quote_line_two
+        * Hi-Quote_line_three
 
 - [x] Haikus - belongs to Profile
 
@@ -92,11 +94,13 @@
 
 - [ ] add time created/updated to display
 
-- [ ] add validation for presence on hi coo lines
+- [x] add validation for presence on hi coo lines
+
+- [x] add validation for uniqueness on user_name
 
 - [x] write validations per line
 
-- [ ] add comments db
+- [ ] add comments to db
 
 - [ ] add comments interactions with hi coo
 

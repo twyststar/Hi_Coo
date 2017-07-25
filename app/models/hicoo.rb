@@ -1,5 +1,6 @@
 class Hicoo < ApplicationRecord
   belongs_to :profile
+  has_many :comments
 
   validates :line_one, presence: true
   validates :line_two, presence: true
