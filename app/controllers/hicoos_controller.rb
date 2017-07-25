@@ -17,7 +17,7 @@ class HicoosController < ApplicationController
       flash[:notice] = "Hi Coo Recorded!"
       redirect_to hicoo_path(@hicoo)
     else
-      flash[:notice] = "Your Hi Coo could not be recorded!"
+      flash[:notice] = "Wrong number of syllables!"
       render :new
     end
   end
@@ -29,9 +29,11 @@ class HicoosController < ApplicationController
   def update
     @hicoo = Hicoo.find(params[:id])
 
-    if @hicoo.update(params)
+    if @hicoo.update(hicoo_params)
       redirect_to hicoo_path(@hicoo)
+      flash[:notice] = "Hi Coo Recorded!"
     else
+      flash[:notice] = "Wrong number of syllables!"
       render :edit
     end
   end

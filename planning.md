@@ -27,7 +27,8 @@
 
 ## Validations
 
-- [ ]  _Haiku must validate at 5-7-5_
+- [x]  _Haiku must validate at 5-7-5_
+  * This is validating that lines one and three are 4-6, and line two is 6-8, due to missing/extra syllables in the api results.
 
 - [ ]  _Comments/discussion on haiku can be plain language, validate for length_
 
@@ -54,11 +55,15 @@
 
 - [x] change form, display, permissions for hi quote
 
-- [ ] make call for syllable count
+- [x] config for secure key storage
 
-- [ ] make call for syllable count a helper
+- [ ]
 
-- [ ] write validations per line
+- [x] make call for syllable count
+
+- [ ] make call for syllable count a helper?
+
+- [x] write validations per line
 
 - [ ] add comments db
 
@@ -68,17 +73,13 @@
 
 ## Current notes:
 
-Words api endpoint:
+* Words api endpoint:
+
 https://wordsapiv1.p.mashape.com/words/{word}/syllables
 
+* Example call:
 https://wordsapiv1.p.mashape.com/words/incredible/syllables,
   headers:{
     "X-Mashape-Key" => "KEYHERE",
     "Accept" => "application/json"
   }
-
-rest_client gem example:
-
-require 'rest-client'
-
-RestClient.get(url, headers={})

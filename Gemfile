@@ -14,6 +14,7 @@ gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'sprockets-rails', '~> 3.2'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'rest-client'
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.2'
