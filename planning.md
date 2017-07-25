@@ -66,16 +66,16 @@
 
 - [x] test for basic relations between tables
 
-- [ ] test for validations for presence etc.
+- [x] test for validations for presence etc.
 
 - [ ] test for custom validations
 
 - [ ] test accessible CRUD
 
-- [ ] integration tests for:
+- [x] integration tests for:
     * navigation
     * admin
-    * accessible CRUD
+
 
 
 ## Ongoing To-DO
