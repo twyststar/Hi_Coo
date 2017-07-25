@@ -94,7 +94,7 @@
 
 - [x] edit hi coo display to contain content properly
 
-- [ ] add time created/updated to display
+- [x] add time created/updated to display
 
 - [x] add validation for presence on hi coo lines
 
@@ -102,9 +102,13 @@
 
 - [x] write validations per line
 
+- [x] add hi coo count to displays
+
 - [x] add comments to db
 
 - [ ] add comments interactions with hi coo
+
+- [ ] make main displays' hi coo clickable to show
 
 ~~make call for syllable count~~
 ~~make call for syllable count a helper~~

@@ -2,15 +2,26 @@
 <% if @hicoos.any? %>
   <% @hicoos.each do |coo| %>
   <div class="well">
+    <%= link_to profile_path(coo.profile) do %>
     <div class="right">
       <h4><%= coo.author %></h4>
       <%= image_tag(coo.profile.avatar(:thumb)) %>
+      <br>
+      <% if current_user.profile.id == coo.profile_id %>
+      <%= link_to "Edit your Hi Coo", edit_hicoo_path(coo) %>
+      <% else %>
+      <br>
+      <p>Poet since <%= coo.profile.created_at.strftime("%Y-%m-%d") %></p>
+      <h4>Coo: <%=coo.profile.hicoos.length%></h4> 
+      <% end %>
     </div>
+    <% end %>
     <h3><%= coo.title %></h3>
     <h2><%= coo.line_one %></h2>
     <h2><%= coo.line_two %></h2>
     <h2><%= coo.line_three %></h2>
-
+    <br>
+    <p><%= coo.created_at.strftime("%Y-%m-%d") %></p>
   </div>
   <% end %>
 <% end %>

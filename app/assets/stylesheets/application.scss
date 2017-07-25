@@ -47,3 +47,20 @@ body {
     padding-left: 5%;
   }
 }
+
+
+.profile-box {
+  margin-top: 2%;
+  border-left: 1px solid gray;
+  text-align: center;
+  .inner {
+    background-color: #d0d3d8;
+    padding: 3%;
+    margin-left: 6%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+  }
+}
+.profile-coo {
+  padding-top: 5%;
+  padding-right: 3%;
+}

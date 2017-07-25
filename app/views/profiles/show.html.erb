@@ -1,18 +1,47 @@
-<% if current_user.id == @profile.user_id %>
-<h1>Welcome, <%= current_user.profile.user_name %>!</h1>
-<%= image_tag(@profile.avatar(:medium)) %>
-<%= link_to "Edit your profile", edit_profile_path(@profile) %>
-<% else %>
-
-<h1><%= @profile.user_name %>'s Profile</h1>
-<%= image_tag(@profile.avatar(:medium)) %>
-<% end %>
-
-  <div class="well">
-    <p>(The Hi-Quote is not strictly 5-7-5 haiku, but the poet's take on the form, or translated traditional Japanese haiku)</p>
-    <h4>"<%= @profile.hi_quote_one %></h4>
-    <h4><%= @profile.hi_quote_two %></h4>
-    <h4><%= @profile.hi_quote_three %>"</h4>
+<div class="row">
+  <div class="col-xs-7 profile-coo">
+    <% if @profile.hicoos.any? %>
+    <% @profile.hicoos.each do |coo| %>
+    <div class="well">
+      <%= link_to profile_path(coo.profile) do %>
+      <div class="right">
+        <h4><%= coo.author %></h4>
+        <%= image_tag(coo.profile.avatar(:thumb)) %>
+        <br>
+        <% if current_user.profile.id == coo.profile_id %>
+        <%= link_to "Edit your Hi Coo", edit_hicoo_path(coo) %>
+        <% end %>
+      </div>
+      <% end %>
+      <h3><%= coo.title %></h3>
+      <h2><%= coo.line_one %></h2>
+      <h2><%= coo.line_two %></h2>
+      <h2><%= coo.line_three %></h2>
+      <br>
+      <p><%= coo.created_at.strftime("%Y-%m-%d") %></p>
+    </div>
+    <% end %>
+    <% else %>
+      <h3>This poet has not recorded any Coo yet.</h3>
+    <% end %>
   </div>
+  <div class="col-xs-5 profile-box">
+    <% if current_user.id == @profile.user_id %>
+    <h1>Welcome, <%= current_user.profile.user_name %>!</h1>
+    <%= image_tag(@profile.avatar(:medium)) %>
+    <br>
+    <%= link_to "Edit your profile", edit_profile_path(@profile) %>
+    <% else %>
 
-<h2>this one will have user avatar, recent HiCoo's and comments</h2>
+    <h1><%= @profile.user_name %>'s Profile</h1>
+    <%= image_tag(@profile.avatar(:medium)) %>
+    <% end %>
+    <p>Poet since <%= @profile.created_at.strftime("%Y-%m-%d") %></p>
+    <h2><%= @profile.user_name %>'s Hi Quote</h2>
+    <div class="inner">
+      <h4>"<%= @profile.hi_quote_one %></h4>
+      <h4><%= @profile.hi_quote_two %></h4>
+      <h4><%= @profile.hi_quote_three %>"</h4>
+    </div>
+  </div>
+</div>
