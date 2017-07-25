@@ -43,6 +43,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'launchy'
+  gem 'capybara'
   gem 'pry'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'

@@ -36,15 +36,46 @@
 
 - [x]  Devise for user auth, rails_admin for admin
 
-## Appearance
+## Appearance/Pages
 
+- [ ] ember twitter haiku feed on home page
 
-## Stretch
+- [ ] style home page
 
-  * Likes as join between users and hi-coos?
-  * Seeds for beginning haiku
-  * Animations
-  * Photos to certain categories?
+- [ ] style splash page
+
+- [ ] style display boxes for hi coo throughout
+
+- [x] change form, display, permissions for hi quote
+
+- [ ] style profile page
+
+- [x] edit hi coo display to contain content properly
+
+- [ ] add time created/updated to display
+
+- [ ] add validation for presence on hi coo lines
+
+- [ ] add About page, History page
+
+- [ ] add collapsing menu for About, History?
+
+- [ ] add collapsing menu for profile actions- sessions, edit etc?
+
+## Test
+
+- [x] test for basic relations between tables
+
+- [ ] test for validations for presence etc.
+
+- [ ] test for custom validations
+
+- [ ] test accessible CRUD
+
+- [ ] integration tests for:
+    * navigation
+    * admin
+    * accessible CRUD
 
 
 ## Ongoing To-DO
@@ -63,18 +94,23 @@
 
 - [ ] add validation for presence on hi coo lines
 
-~~make call for syllable count~~
-    * While successful, the api call was slow and inaccurate. Refactored to use a gem. 
-
-- [ ] make call for syllable count a helper?
-
 - [x] write validations per line
 
 - [ ] add comments db
 
 - [ ] add comments interactions with hi coo
 
+~~make call for syllable count~~
+~~make call for syllable count a helper~~
+    * While successful, the api call was slow and inaccurate. Refactored to use a gem.
 
+
+## Stretch
+
+  * Likes as join between users and hi-coos?
+  * Seeds for beginning haiku
+  * Animations
+  * Photos to certain categories?
 
 
 ## Current notes:
