@@ -3,10 +3,8 @@ FactoryGirl.define do
     email 'test@example.com'
     password 'f4k3p455w0rd'
     admin 'false'
-  end
-  factory :admin do
-    email 'test@test.com'
-    password 'password'
-    admin 'true'
+    factory :admin do
+      admin 'true'
+    end
   end
 end

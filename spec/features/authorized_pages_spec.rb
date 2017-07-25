@@ -7,3 +7,13 @@ describe "cannot post unless logged in" do
     expect(page).to have_content 'You need to sign in or sign up before continuing.'
   end
 end
+
+describe "User will have admin access if signed in as admin user" do
+  it "shows link to admin if admin user signed in" do
+    user = FactoryGirl.create(:admin)
+    login_as(user)
+    visit 'home#index'
+    expect(page).to have_content 'Admin'
+  end
+  
+end
