@@ -12,8 +12,11 @@
 
 - [x] Haikus - belongs to Profile
 
-        * poem - validations for haiku 5-7-5
-        * poet
+        * title
+        * line_one
+        * line_two
+        * line_three
+        * author
 
 - [ ] Comments - belongs to Haikus, belongs to Profile - polymorphic?
 
@@ -45,13 +48,21 @@
 
 ## Ongoing To-DO
 
+- [x] add title field to hi coo
+
 - [x] fix hi-quote into 3 columns
 
-- [x] add title field to hi coo
+- [x] change form, display, permissions for hi quote
+
+- [ ] make call for syllable count
 
 - [ ] make call for syllable count a helper
 
 - [ ] write validations per line
+
+- [ ] add comments db
+
+- [ ] add comments interactions with hi coo
 
 
 

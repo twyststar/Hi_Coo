@@ -3,13 +3,14 @@
   <head>
     <title>HiCoo</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Ceviche+One" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <h1 class='headline'>Hi Coo!</h1>
       <ul class="nav navbar-nav navbar-left">
         <% if current_user %>
           <li class="round-image-50"><%= image_tag(current_user.profile.avatar(:thumb)) %></li>
@@ -20,6 +21,7 @@
           <li><%= link_to 'Admin', rails_admin_path %></li>
         <% end %>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Home", home_index_path %></li>
           <% if current_user %>
