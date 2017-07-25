@@ -20,9 +20,9 @@
         * line_three
         * author
 
-- [ ] Comments - belongs to Haikus, belongs to Profile - polymorphic?
+- [x] Comments - belongs to Haikus, belongs to Profile - polymorphic?
 
-        * body
+        * content
         * author
 
 - [ ] Categories/tags - belong to haiku
@@ -40,7 +40,9 @@
 
 ## Appearance/Pages
 
-- [ ] ember twitter haiku feed on home page
+- [ ] add default for hi-quote
+
+- [ ] embed twitter haiku feed on home page
 
 - [ ] style home page
 
@@ -100,7 +102,7 @@
 
 - [x] write validations per line
 
-- [ ] add comments to db
+- [x] add comments to db
 
 - [ ] add comments interactions with hi coo
 
