@@ -63,7 +63,8 @@
 
 - [ ] add validation for presence on hi coo lines
 
-- [x] make call for syllable count
+~~make call for syllable count~~
+    * While successful, the api call was slow and inaccurate. Refactored to use a gem. 
 
 - [ ] make call for syllable count a helper?
 
