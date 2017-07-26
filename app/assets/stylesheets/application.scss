@@ -47,17 +47,62 @@ body {
 }
 
 .well {
+  margin-left: -4%;
+  margin-right: -4%;
   min-height: 200px;
   // h2{
   //   padding-left: 5%;
   // }
 }
 
+
+.panel-profile {
+  position: static;
+}
+
+.pro-heading {
+  height: 120px;
+}
+.panel {
+  .panel-heading{
+    background-color: red;
+  }
+}
+.panel-profile-img{
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin-top: -67px;
+  float: left;
+}
+
+
 .mini-coo-box {
   text-align: center;
   display: inline-block;
   padding-left: 20%;
 }
+.mini-list-nav{
+  text-align: center;
+  li {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+.mini-list-pro{
+  text-align: center;
+  li {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 .profile-box {
   margin-top: 2%;
   border-left: 1px solid gray;

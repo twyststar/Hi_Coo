@@ -1,12 +1,29 @@
-<h1>Main page with all the haiku love coming soon.</h1>
-<p>Some stuff on the site, the rules, where to explore.</p>
 <br>
-<h2><%= link_to "Compose a Hi Coo", new_hicoo_path %>
-  <br>
-  <hr>
-</h2>
-<div class="col-xs-3 well">
-  <h3>User info here</h3>
+<div class="col-xs-3">
+  <div class="panel panel-default panel-profile ">
+    <div class="panel-heading pro-heading"></div>
+    <div class="panel-body pro-body text-center">
+      <%= image_tag(@profile.avatar(:thumb), :class => "panel-profile-img") %>
+      <h5 class="panel-title"><%= @profile.user_name %></h5>
+      <br>
+      <p class="bio">"<%= @profile.hi_quote_one %></p>
+      <p class="bio"><%= @profile.hi_quote_two %></p>
+      <p class="bio"><%= @profile.hi_quote_three %>"</p>
+      <hr>
+      <ul class="list-inline mini-list-pro">
+        <ul class="list-unstyled col-xs-3">
+          <li>Coo
+             <li><%= @profile.hicoos.length %></li>
+          </li>
+        </ul>
+        <ul class="list-unstyled col-xs-3">
+          <li>Something
+             <li><%= @profile.hicoos.length %></li>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </div>
 </div>
 <div class="col-xs-6">
   <% if @hicoos.any? %>
@@ -23,10 +40,17 @@
           <h4><%= coo.line_three %></h4>
         </div>
         <p><%= coo.created_at.strftime("%Y-%m-%d") %></p>
+        <hr>
+        <ul class="list-inline" id="mini-list-nav">
+          <li>comment</li>
+          <li>stuff</li>
+          <li>like</li>
+          <li>not sure</li>
+        </ul>
       </div>
     <% end %>
   <% end %>
 </div>
-<div class="col-xs-3 well">
+<div class="col-xs-3" >
   <h3>Embed twit haiku here?</h3>
 </div>
