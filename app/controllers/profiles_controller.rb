@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  
+
   before_action :authenticate_user!, :except => [:index, :show]
 
   def index
@@ -27,7 +27,7 @@ class ProfilesController < ApplicationController
   private
 
   def profile_params
-    params.require(:profile).permit(:user_name, :user_id, :avatar, :file, :file_file_name, :file_content_type, :file_file_size, :file_updated_at, :hi_quote_one, :hi_quote_two, :hi_quote_three)
+    params.require(:profile).permit(:user_name, :user_id, :avatar, :file, :file_file_name, :file_content_type, :file_file_size, :file_updated_at, :hi_quote_one, :hi_quote_two, :hi_quote_three, :bio)
   end
 
 end

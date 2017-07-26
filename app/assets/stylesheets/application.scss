@@ -29,8 +29,9 @@
   img { width: 100% }
 }
 .front_img {
-  margin-left: 29%;
-  padding-top: 5%;
+  width: 100%;
+  height: auto;
+
 }
 
 .main-page-post-header{
@@ -39,11 +40,13 @@
 }
 
 .headline {
-  margin-bottom: -5.5%;
-  color: red;
+  margin-bottom: -5%;
   font-size: 2em;
   text-align: center;
   font-family: 'Ceviche One', cursive;
+  a {
+    color: red;
+  }
 }
 
 body {

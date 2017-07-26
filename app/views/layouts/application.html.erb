@@ -10,7 +10,7 @@
 
   <body>
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
-      <h1 class='headline'>Hi Coo!</h1>
+      <h1 class='headline'><%= link_to 'Hi Coo!', '/' %></h1>
       <ul class="nav navbar-nav navbar-left">
         <% if current_user && current_user.admin %>
           <li><%= link_to 'Admin', rails_admin_path %></li>
