@@ -85,12 +85,35 @@
         <% end %>
         <p><%= coo.created_at.strftime("%Y-%m-%d") %></p>
         <hr>
-        <ul class="list-inline mini-list-nav">
-          <li><%= link_to 'Comment', new_hicoo_comment_path(coo.id), id: 'comment_link_button', remote: true %></li>
-          <li>stuff</li>
-          <li>like</li>
-          <li>not sure</li>
-        </ul>
+  <!-- mini comment/like display -->
+        <div class="row">
+          <ul class="list-inline mini-list-nav">
+            <ul class="list-unstyled col-xs-3">
+              <li><%= link_to 'Comment', new_hicoo_comment_path(coo.id), id: 'comment_link_button', remote: true %>
+                  <% if coo.comments.any? %>
+                    <li><%= coo.comments.length %></li>
+                  <% else %>
+                    <li>0</li>
+                  <% end %>
+              </li>
+            </ul>
+            <ul class="list-unstyled col-xs-3">
+              <li><%= link_to 'Like' %>
+      <!-- insert if similar to above for 'likes' here             -->
+                    <li>0</li>
+
+              </li>
+            </ul>
+            <ul class="list-unstyled col-xs-3">
+              <li><%= link_to 'Not Sure Yet' %>
+      <!-- insert if similar to above for 'likes' here             -->
+                    <li>0</li>
+
+              </li>
+            </ul>
+          </ul>
+        </div>
+
       </div>
     <% end %>
   <% end %>
