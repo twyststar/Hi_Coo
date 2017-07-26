@@ -108,6 +108,12 @@
 
 - [ ] add comments interactions with hi coo
 
+- [ ] add cover photo to profile
+
+- [ ] add photo to hicoo
+
+- [ ] add bio photo to profile
+
 - [ ] make main displays' hi coo clickable to show
 
 ~~make call for syllable count~~
