@@ -40,6 +40,8 @@
 
 ## Appearance/Pages
 
+- [ ] change nav/banner for not logged in/splash path
+
 - [ ] add default for hi-quote
 
 - [x] embed twitter haiku feed on home page

@@ -34,6 +34,23 @@
 
 }
 
+.splash-header {
+  background-image: url('red-hicoo.jpg');
+  background-size: cover;
+  min-height: 350px;
+  margin-top: .25%;
+  margin-left: -6%;
+  margin-right: -6%;
+  h1 {
+    font-family: 'Ceviche One', cursive;
+    color: #c9c9c9;
+    font-size: 10em;
+    padding-top: 2%;
+    float: right;
+    padding-right: 8%;
+  }
+}
+
 .main-page-post-header{
   background-color: #e0e0e0;
 
