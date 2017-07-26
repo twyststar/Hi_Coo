@@ -14,6 +14,7 @@
   img { width: 100% }
 }
 
+
 .front_img {
   margin-left: 29%;
   padding-top: 5%;
@@ -41,14 +42,22 @@ body {
   float: right;
 }
 
-.well {
-  min-height: 250px;
-  h2{
-    padding-left: 5%;
-  }
+.left {
+  float: left;
 }
 
+.well {
+  min-height: 200px;
+  // h2{
+  //   padding-left: 5%;
+  // }
+}
 
+.mini-coo-box {
+  text-align: center;
+  display: inline-block;
+  padding-left: 20%;
+}
 .profile-box {
   margin-top: 2%;
   border-left: 1px solid gray;

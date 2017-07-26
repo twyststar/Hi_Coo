@@ -5,9 +5,28 @@
   <br>
   <hr>
 </h2>
-<div class="col-xs-8 well">
-  <h3>Most recent or most poular coos here</h3>
+<div class="col-xs-3 well">
+  <h3>User info here</h3>
 </div>
-<div class="col-xs-4 well">
+<div class="col-xs-6">
+  <% if @hicoos.any? %>
+    <% @hicoos.each do |coo| %>
+      <div class="well">
+        <div class="mini-header">
+          <%= image_tag(coo.profile.avatar(:thumb), :class => "round-image-50 left") %>
+          <p><%= coo.author %></p>
+        </div>
+        <div class="mini-coo-box">
+          <h5><%= coo.title %></h5>
+          <h4><%= coo.line_one %></h4>
+          <h4><%= coo.line_two %></h4>
+          <h4><%= coo.line_three %></h4>
+        </div>
+        <p><%= coo.created_at.strftime("%Y-%m-%d") %></p>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+<div class="col-xs-3 well">
   <h3>Embed twit haiku here?</h3>
 </div>
