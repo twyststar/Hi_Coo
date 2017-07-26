@@ -2,7 +2,7 @@
 <!-- Mini profile display -->
 <div class="col-xs-3">
   <% if current_user %>
-  <div class="panel panel-default panel-profile ">
+  <div class="panel panel-default panel-profile">
     <div class="panel-heading pro-heading"></div>
     <div class="panel-body pro-body text-center">
       <%= image_tag(@profile.avatar(:thumb), :class => "panel-profile-img") %>
@@ -69,20 +69,24 @@
   <% if @hicoos.any? %>
     <% @hicoos.each do |coo| %>
       <div class="well">
+        <%= link_to profile_path(coo.profile) do %>
         <div class="mini-header">
           <%= image_tag(coo.profile.avatar(:thumb), :class => "round-image-50 left") %>
           <h5><%= coo.author %></h5>
         </div>
+        <% end %>
+        <%= link_to hicoo_path(coo) do %>
         <div class="mini-coo-box">
           <h5><%= coo.title %></h5>
           <h4><%= coo.line_one %></h4>
           <h4><%= coo.line_two %></h4>
           <h4><%= coo.line_three %></h4>
         </div>
+        <% end %>
         <p><%= coo.created_at.strftime("%Y-%m-%d") %></p>
         <hr>
         <ul class="list-inline mini-list-nav">
-          <li>comment</li>
+          <li><%= link_to 'Comment', new_hicoo_comment_path(coo.id), id: 'comment_link_button', remote: true %></li>
           <li>stuff</li>
           <li>like</li>
           <li>not sure</li>

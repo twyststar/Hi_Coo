@@ -7,5 +7,14 @@
   <h1 class="splash-line-2">Tell the world your every thought</h1>
   <h1 class="splash-line-3">It must be Hi-coo</h1>
   <br>
-  <h2><%= link_to 'Enter', home_index_path %></h2>
+
+  <% if current_user %>
+    <h2>Welcome! <%= link_to 'Home', home_index_path %></h2>
+  <% else %>
+    <h2><%= link_to 'Enter', home_index_path %></h2>
+  <% end %>
+  <br>
+  <br>
+  <br>
+  <%= image_tag('white-birds.jpg', :class => "bottom-birds") %>
 </div>
