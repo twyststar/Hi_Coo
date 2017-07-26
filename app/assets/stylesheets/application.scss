@@ -51,6 +51,27 @@
   }
 }
 
+.splash-body {
+  min-height: 900px;
+  background-color: black;
+  color: #c9c9c9;
+  margin-left: -6%;
+  margin-right: -6%;
+  padding: 3%;
+  text-align: center;
+  h1 {
+    font-family: 'Hammersmith One', sans-serif;
+  }
+  h2 {
+    font-size: 7em;
+    font-family: 'Ceviche One', cursive;
+  }
+  a {
+    color: #8e8e8e;
+  }
+}
+
+
 .main-page-post-header{
   background-color: #e0e0e0;
 

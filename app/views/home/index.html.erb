@@ -1,6 +1,7 @@
 <br>
 <!-- Mini profile display -->
 <div class="col-xs-3">
+  <% if current_user %>
   <div class="panel panel-default panel-profile ">
     <div class="panel-heading pro-heading"></div>
     <div class="panel-body pro-body text-center">
@@ -25,15 +26,43 @@
       </ul>
     </div>
   </div>
+  <% else %>
+  <div class="panel panel-default panel-profile ">
+    <div class="panel-heading pro-heading"></div>
+    <div class="panel-body pro-body text-center">
+      <%= image_tag('thumb/missing.png', :class => "panel-profile-img") %>
+      <h5 class="panel-title">Not logged in</h5>
+      <br>
+      <p class="bio">"You can see from there</p>
+      <p class="bio">but you cannot make Hi-coo</p>
+      <p class="bio">shouldn't you sign in?"</p>
+      <hr>
+      <ul class="list-inline mini-list-pro">
+        <ul class="list-unstyled col-xs-3">
+          <li>
+            <%= link_to 'Sign In', new_user_session_path %>
+          </li>
+        </ul>
+        <ul class="list-unstyled col-xs-3">
+          <li>
+             <%= link_to 'Sign Up', new_user_registration_path %>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </div>
+  <% end %>
 </div>
 
 <!-- Main hi coo display -->
 <div class="col-xs-6">
-  <div class="main-page-post-header well">
-    <%= image_tag(@profile.avatar(:thumb), :class => "round-image-30 left") %>
-    <h4>Would you like to Coo?</h4>
-    <%= link_to 'Coo', new_hicoo_path(), id: "new_coo", remote: true %>
-  </div>
+  <% if current_user %>
+    <div class="main-page-post-header well">
+      <%= image_tag(@profile.avatar(:thumb), :class => "round-image-30 left") %>
+      <h4>Would you like to Coo?</h4>
+      <%= link_to 'Coo', new_hicoo_path(), id: "new_coo", remote: true %>
+    </div>
+  <% end %>
   <div class="main-page-coo-reload well">
     <h6 class='home-refresh'><%= link_to 'Find new Coo', home_index_path %></h6>
   </div>

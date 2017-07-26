@@ -1,7 +1,9 @@
 class HomeController < ApplicationController
 
   def index
-    @profile = current_user.profile
+    if current_user
+      @profile = current_user.profile
+    end
     @hicoos = Hicoo.all
 
   end
