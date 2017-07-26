@@ -33,7 +33,7 @@
     <h4>I'll put a post widget here?</h4>
   </div>
   <div class="main-page-coo-reload well">
-    <h6><%= link_to 'Find new Coo', '#' %></h6>
+    <h6 class='home-refresh'><%= link_to 'Find new Coo', home_index_path %></h6>
   </div>
   <% if @hicoos.any? %>
     <% @hicoos.each do |coo| %>
