@@ -42,7 +42,7 @@
 
 - [ ] change nav/banner for not logged in/splash path
 
-- [ ] add default for hi-quote
+- [x] add default for hi-quote
 
 - [x] embed twitter haiku feed on home page
 
@@ -50,7 +50,7 @@
 
 - [ ] style home page
 
-- [ ] style splash page
+- [x] style splash page
 
 - [ ] style display boxes for hi coo throughout
 

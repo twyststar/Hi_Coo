@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170726175402) do
+ActiveRecord::Schema.define(version: 20170726212755) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,9 +43,9 @@ ActiveRecord::Schema.define(version: 20170726175402) do
     t.string "avatar_content_type"
     t.integer "avatar_file_size"
     t.datetime "avatar_updated_at"
-    t.string "hi_quote_one"
-    t.string "hi_quote_two"
-    t.string "hi_quote_three"
+    t.string "hi_quote_one", default: "No"
+    t.string "hi_quote_two", default: "Hi-Quote"
+    t.string "hi_quote_three", default: "Entered"
     t.string "bio"
   end
 
