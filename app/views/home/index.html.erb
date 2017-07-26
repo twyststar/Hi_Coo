@@ -1,4 +1,5 @@
 <br>
+<!-- Mini profile display -->
 <div class="col-xs-3">
   <div class="panel panel-default panel-profile ">
     <div class="panel-heading pro-heading"></div>
@@ -25,13 +26,21 @@
     </div>
   </div>
 </div>
+
+<!-- Main hi coo display -->
 <div class="col-xs-6">
+  <div class="main-page-post-header well">
+    <h4>I'll put a post widget here?</h4>
+  </div>
+  <div class="main-page-coo-reload well">
+    <h6><%= link_to 'Find new Coo', '#' %></h6>
+  </div>
   <% if @hicoos.any? %>
     <% @hicoos.each do |coo| %>
       <div class="well">
         <div class="mini-header">
           <%= image_tag(coo.profile.avatar(:thumb), :class => "round-image-50 left") %>
-          <p><%= coo.author %></p>
+          <h5><%= coo.author %></h5>
         </div>
         <div class="mini-coo-box">
           <h5><%= coo.title %></h5>
@@ -51,6 +60,9 @@
     <% end %>
   <% end %>
 </div>
-<div class="col-xs-3" >
-  <h3>Embed twit haiku here?</h3>
+
+<!-- Embedded twitter -->
+<div class="col-xs-3">
+  <a class="twitter-timeline"  href="https://twitter.com/hashtag/haiku" data-widget-id="890020578039549952">#haiku Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </div>
