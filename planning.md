@@ -32,7 +32,7 @@
 - [x]  _Haiku must validate at 5-7-5_
   * This is validating that lines one and three are 4-6, and line two is 6-8, due to missing/extra syllables in the api results.
 
-- [ ]  _Comments/discussion on haiku can be plain language, validate for length_
+- [x]  _Comments/discussion on haiku can be plain language, validate for length_
 
 ## Authentication
 
@@ -42,7 +42,7 @@
 
 - [ ] add default for hi-quote
 
-- [ ] embed twitter haiku feed on home page
+- [x] embed twitter haiku feed on home page
 
 - [ ] style home page
 
@@ -56,9 +56,9 @@
 
 - [x] edit hi coo display to contain content properly
 
-- [ ] add time created/updated to display
+- [x] add time created/updated to display
 
-- [ ] add validation for presence on hi coo lines
+- [x] add validation for presence on hi coo lines
 
 - [ ] add About page, History page
 
@@ -112,7 +112,7 @@
 
 - [ ] add photo to hicoo
 
-- [ ] add bio photo to profile
+- [ ] add bio to profile
 
 - [ ] make main displays' hi coo clickable to show
 
