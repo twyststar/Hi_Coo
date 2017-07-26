@@ -1,6 +1,8 @@
 class HicoosController < ApplicationController
 
   before_action :authenticate_user!, :except => [:index, :show]
+  respond_to :html, :js
+
 
   def index
     @hicoos = Hicoo.all
@@ -16,14 +18,20 @@ class HicoosController < ApplicationController
 
   def create
     @hicoo = Hicoo.new(hicoo_params)
-    if @hicoo.save
+    if @hicoo.save!
       flash[:notice] = "Hi Coo Recorded!"
-      redirect_to hicoo_path(@hicoo)
+      respond_to do |f|
+        f.html { redirect_to home_index_path }
+        f.js
+      end
     else
       flash[:notice] = "Wrong number of syllables!"
-      render :new
+      redirect_to home_index_path
     end
+     
   end
+
+
 
   def edit
     @hicoo = Hicoo.find(params[:id])

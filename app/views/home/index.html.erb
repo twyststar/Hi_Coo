@@ -32,7 +32,7 @@
   <div class="main-page-post-header well">
     <%= image_tag(@profile.avatar(:thumb), :class => "round-image-30 left") %>
     <h4>Would you like to Coo?</h4>
-
+    <%= link_to 'Coo', new_hicoo_path(), id: "new_coo", remote: true %>
   </div>
   <div class="main-page-coo-reload well">
     <h6 class='home-refresh'><%= link_to 'Find new Coo', home_index_path %></h6>

@@ -44,6 +44,8 @@
 
 - [x] embed twitter haiku feed on home page
 
+- [x] add ajax new hicoo form to home page
+
 - [ ] style home page
 
 - [ ] style splash page
