@@ -2,18 +2,20 @@
 
 - [x] Users - devise
 
+        * Standard devise columns
         * Add admin boolean
 
 - [x] Profile - belongs to User
 
-        * Username
+        * User_name
         * Avatar - paperclip
         * Hi-Quote_line_one
         * Hi-Quote_line_two
         * Hi-Quote_line_three
         * Bio
+        * Cover
 
-- [x] Haikus - belongs to Profile
+- [x] Hicoos - belongs to Profile
 
         * title
         * line_one
@@ -49,9 +51,15 @@
 
 ## Appearance/Pages
 
-- [ ] reorder all grouped hicoo so most recent appear at the top
-
 - [ ] style profile page
+
+- [ ] display cover photo on profile
+
+- [ ] display cover photo on mini profile
+
+- [ ] add bio display to profile show
+
+- [ ] reorder all grouped hicoo so most recent appear at the top
 
 - [ ] style display boxes for hi coo throughout
 
@@ -100,6 +108,8 @@
 
 ## Ongoing To-DO
 
+- [ ] add bio field to profile forms
+
 - [ ] ajax form to profile edit
 
 - [ ] ajax form to hicoo edit
@@ -108,7 +118,7 @@
 
 - [ ] make profile displays' hi coo clickable to show
 
-- [ ] add cover photo to profile
+- [x] add cover photo to profile
 
 - [x] add photo to hicoo
 
@@ -149,9 +159,13 @@
 
 ## Stretch
 
+  * Add scope to test time and show time _since post_ instead of just time posted?
+  * Add theme(color/style) choice to profile/hicoo?
+  * Add ability to pick background color as default cover(profile)?
   * Scoped pages to order by most recent, most liked, most commented.
   * Search Field in menu bar
   * Hi-coo Field in menu bar?
+  * Profile to profile messages
   * Likes as join between users and hi-coos?
   * Seeds for beginning haiku
   * Animations
@@ -163,18 +177,31 @@
 
 <!-- ## Current notes:
 
-How can i make things update instantly one I've gone live? I'm assuming some sort of ajax refresh call, and moving the home hicoo into a partial to call it on.
+How do I deploy with database and my admin? Research heroku.
 
+How can I make things update instantly one I've gone live? I'm assuming some sort of ajax refresh call, and moving the home hicoo into a partial to call it on.
 
+  On that note- research updating on heroku after deployment. Do I need to delete and re-do? If anyone is using the app, that would be a problem. Should I version the app like an api??
 
+How can I make chosen variables like profile cover, themes, translate to styles? Do I have to use inline, or can I use sass/scss?
+    How should I let users choose those variables to begin with?
 
+How the hell does twitter do the pop-up that just opaques the background instead of going to another page?
+
+Can I find a way to let users choose from a select number of fonts? Themes as a background to the hicoos?
+
+How do I connect the users for follow or like? Follow being profile to profile, 'like' being a relationship between profile and NOT OWNED hicoo..
+  So the dot notation would break down. I have to add a step between?
 
 
 
 
 -->
 
-<!-- * Words api endpoint:
+<!-- None of the below is useful for this app. It is only here for possible later reference.
+
+
+* Words api endpoint:
 
 https://wordsapiv1.p.mashape.com/words/{word}/syllables
 
