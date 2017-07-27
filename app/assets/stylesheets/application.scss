@@ -187,6 +187,7 @@ body {
   border: 3px solid #525354;
   display: inline-block;
   position: relative;
+  z-index: 2;
   top: -100px;
   width: 200px;
   height: 200px;
@@ -200,11 +201,21 @@ body {
     margin-left: -50px;
   }
 }
+.profile-container{
+  position: relative;
+}
 
 .profile-box {
+  position: absolute;
+  display: block;
+  width: 29%;
+  margin-left: -4.8%;
+  top: -130px;
+  z-index: 1;
   background-color: white;
   text-align: center;
   padding: 1.5%;
+  padding-top: 3%;
   .inner {
     background-color: #d0d3d8;
     padding: 3%;
@@ -213,11 +224,25 @@ body {
   }
 }
 .profile-coo {
+  // margin-left: -2.5%;
+  position: absolute;
+  display: block;
+  width: 57%;
+  left: 25%;
+  top: -140px;
   padding-top: 1%;
   padding-right: 3%;
 }
 
-
+.twit-embed-profile {
+  // margin-left: -2.5%;
+  position: absolute;
+  width: 24%;
+  left: 80%;
+  top: -129px;
+  display: block;
+  // top: -130px;
+}
 
 
 // Form/ajax styles

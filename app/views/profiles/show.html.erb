@@ -7,10 +7,10 @@
 </div>
 
 
-<div class="row">
+<div class="profile-container">
 
   <!-- Profile side -->
-  <div class="col-xs-3 profile-box">
+  <div class="profile-box well">
     <% if current_user.id == @profile.user_id %>
     <h1>Welcome, <%= current_user.profile.user_name %>!</h1>
 
@@ -30,7 +30,7 @@
     </div>
   </div>
 <!-- Coo side -->
-  <div class="col-xs-6 profile-coo">
+  <div class="profile-coo">
     <% if @profile.hicoos.any? %>
     <% @profile.hicoos.each do |coo| %>
     <div class="well">
@@ -87,5 +87,9 @@
       <h3>This poet has not recorded any Coo yet.</h3>
     <% end %>
   </div>
+  <div class="twit-embed-profile">
+    <a class="twitter-timeline"  href="https://twitter.com/hashtag/haikuchallenge" data-widget-id="890633974938128384">#haikuchallenge Tweets</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
+  </div>
 </div>
