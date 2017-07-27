@@ -108,7 +108,7 @@
 
 ## Ongoing To-DO
 
-### - [ ] Complete README 
+### - [ ] Complete README
 
 - [ ] add bio field to profile forms
 
@@ -119,6 +119,8 @@
 - [ ] add delete ability to owned hicoo/comments
 
 - [ ] make profile displays' hi coo clickable to show
+
+- [x] redirect to index on sign in
 
 - [x] add cover photo to profile
 
