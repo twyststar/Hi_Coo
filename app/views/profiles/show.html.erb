@@ -7,10 +7,30 @@
 </div>
 
 
-
-
 <div class="row">
-  <div class="col-xs-7 profile-coo">
+
+  <!-- Profile side -->
+  <div class="col-xs-3 profile-box">
+    <% if current_user.id == @profile.user_id %>
+    <h1>Welcome, <%= current_user.profile.user_name %>!</h1>
+
+    <br>
+    <%= link_to "Edit your profile", edit_profile_path(@profile) %>
+    <% else %>
+
+    <h1><%= @profile.user_name %>'s Profile</h1>
+
+    <% end %>
+    <p>Poet since <%= @profile.created_at.strftime("%Y-%m-%d") %></p>
+    <h2><%= @profile.user_name %>'s Hi Quote</h2>
+    <div class="inner">
+      <h4>"<%= @profile.hi_quote_one %></h4>
+      <h4><%= @profile.hi_quote_two %></h4>
+      <h4><%= @profile.hi_quote_three %>"</h4>
+    </div>
+  </div>
+<!-- Coo side -->
+  <div class="col-xs-6 profile-coo">
     <% if @profile.hicoos.any? %>
     <% @profile.hicoos.each do |coo| %>
     <div class="well">
@@ -68,25 +88,4 @@
     <% end %>
   </div>
 
-  <!-- Profile side -->
-
-  <div class="col-xs-5 profile-box">
-    <% if current_user.id == @profile.user_id %>
-    <h1>Welcome, <%= current_user.profile.user_name %>!</h1>
-    <%= image_tag(@profile.avatar(:medium)) %>
-    <br>
-    <%= link_to "Edit your profile", edit_profile_path(@profile) %>
-    <% else %>
-
-    <h1><%= @profile.user_name %>'s Profile</h1>
-    <%= image_tag(@profile.avatar(:medium)) %>
-    <% end %>
-    <p>Poet since <%= @profile.created_at.strftime("%Y-%m-%d") %></p>
-    <h2><%= @profile.user_name %>'s Hi Quote</h2>
-    <div class="inner">
-      <h4>"<%= @profile.hi_quote_one %></h4>
-      <h4><%= @profile.hi_quote_two %></h4>
-      <h4><%= @profile.hi_quote_three %>"</h4>
-    </div>
-  </div>
 </div>

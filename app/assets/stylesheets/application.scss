@@ -69,8 +69,6 @@ body {
 }
 
 .well {
-  margin-left: -4%;
-  margin-right: -4%;
   background-color: white;
   margin-bottom: -.2%;
 }
@@ -148,6 +146,10 @@ body {
   background-color: #e0e0e0;
 }
 
+.main-coo-col {
+  margin-left: -2%;
+  margin-right: -2%;
+}
 .mini-coo-box {
   text-align: center;
   display: inline-block;
@@ -174,10 +176,11 @@ body {
 
 .profile-banner {
   position: relative;
-  img {
-  }
 }
-
+.profile-cover {
+  width: 1300px;
+  margin-left: -6%;
+}
 .profile-pic{
   margin-right: 2%;
   background-color: white;
@@ -193,18 +196,13 @@ body {
   text-align: center;
   img {
     width: auto;
-  height: 100%;
-  margin-left: -50px;
+    height: 100%;
+    margin-left: -50px;
   }
 }
-.profile-cover {
-  width: 1300px;
-  margin-left: -6%;
-}
+
 .profile-box {
   background-color: white;
-  margin-top: 1%;
-  border-left: 1px solid gray;
   text-align: center;
   padding: 1.5%;
   .inner {
