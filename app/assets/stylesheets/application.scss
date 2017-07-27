@@ -88,7 +88,7 @@
 }
 
 body {
-  background-color: #e2e2e2;
+  background-color: #a5a4a4;
 }
 
 #navbar-collapse-1{
@@ -169,18 +169,20 @@ body {
 }
 
 .profile-box {
+  background-color: white;
   margin-top: 1%;
   border-left: 1px solid gray;
   text-align: center;
+  padding: 1.5%;
   .inner {
     background-color: #d0d3d8;
     padding: 3%;
-    margin-left: 6%;
+    margin-left: 4%;
     box-shadow: 10px 10px 5px #aaaaaa;
   }
 }
 .profile-coo {
-  padding-top: 5%;
+  padding-top: 1%;
   padding-right: 3%;
 }
 
@@ -192,3 +194,7 @@ body {
 #new_comment_form {
   display: none;
 }
+
+// a {
+//   color: #a3a3a3;
+// }

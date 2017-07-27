@@ -27,6 +27,7 @@
 
 - [ ] Categories/tags - belong to haiku
 
+
 ## Validations
 
 - [x]  _Haiku must validate at 5-7-5_
@@ -34,27 +35,33 @@
 
 - [x]  _Comments/discussion on haiku can be plain language, validate for length_
 
+
 ## Authentication
 
 - [x]  Devise for user auth, rails_admin for admin
 
+
 ## Appearance/Pages
 
-- [x] add default for hi-quote
+- [ ] style profile page
 
-- [x] embed twitter haiku feed on home page
+- [ ] style display boxes for hi coo throughout
 
-- [x] add ajax new hicoo form to home page
+- [ ] add About page, History page
+
+- [ ] add collapsing menu for About, History?
+
+- [ ] add collapsing menu for profile actions- sessions, edit etc?
+
+- [ ] remove hicoo index(now on home)
+
+- [ ] remove unneeded routes
 
 - [ ] style home page
 
 - [x] style splash page
 
-- [ ] style display boxes for hi coo throughout
-
 - [x] change form, display, permissions for hi quote
-
-- [ ] style profile page
 
 - [x] edit hi coo display to contain content properly
 
@@ -62,11 +69,14 @@
 
 - [x] add validation for presence on hi coo lines
 
-- [ ] add About page, History page
+- [x] add default for hi-quote
 
-- [ ] add collapsing menu for About, History?
+- [x] embed twitter haiku feed on home page
 
-- [ ] add collapsing menu for profile actions- sessions, edit etc?
+- [x] add ajax new hicoo form to home page
+
+~~change any headlines/background and switch bg to black~~
+    * that was too dark
 
 ## Test
 
@@ -85,6 +95,18 @@
 
 
 ## Ongoing To-DO
+
+- [ ] ajax form to profile edit
+
+- [ ] ajax form to hicoo edit
+
+- [ ] add delete ability to owned hicoo/comments
+
+- [ ] make main displays' hi coo clickable to show
+
+- [ ] add cover photo to profile
+
+- [ ] add photo to hicoo
 
 - [x] add title field to hi coo
 
@@ -108,15 +130,9 @@
 
 - [x] add comments to db
 
-- [ ] add comments interactions with hi coo
+- [x] add comments interactions with hi coo
 
-- [ ] add cover photo to profile
-
-- [ ] add photo to hicoo
-
-- [ ] add bio to profile
-
-- [ ] make main displays' hi coo clickable to show
+- [x] add bio to profile
 
 ~~make call for syllable count~~
 ~~make call for syllable count a helper~~
@@ -125,6 +141,8 @@
 
 ## Stretch
 
+  * Search Field in menu bar
+  * Hi-coo Field in menu bar?
   * Likes as join between users and hi-coos?
   * Seeds for beginning haiku
   * Animations
