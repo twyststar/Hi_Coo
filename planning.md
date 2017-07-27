@@ -53,6 +53,10 @@
 
 - [ ] style profile page
 
+- [ ] add large cover to profile
+
+- [ ] add bio to profile
+
 - [ ] display cover photo on profile
 
 - [ ] display cover photo on mini profile
@@ -110,7 +114,7 @@
 
 ### - [ ] Complete README
 
-- [ ] add bio field to profile forms
+- [ ] display most recent hicoo first
 
 - [ ] ajax form to profile edit
 
@@ -119,6 +123,8 @@
 - [ ] add delete ability to owned hicoo/comments
 
 - [ ] make profile displays' hi coo clickable to show
+
+- [x] add bio field to profile forms
 
 - [x] redirect to index on sign in
 
