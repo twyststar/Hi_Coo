@@ -38,9 +38,9 @@
 
   ~~* This is validating that lines one and three are 4-6, and line two is 6-8, due to missing/extra syllables in the api results.~~ * Fixed validation issue by removing api and using ruby-rhymes gem.
 
-- [x]  _Comments/discussion on haiku can be plain language, validate for length_
+  * These validations also cover presence of, as an empty field has no syllables.
 
-    * These validations also cover presence of, as an empty field has no syllables.
+- [x]  _Comments/discussion on haiku can be plain language, validate for length_
 
 - [x] _Validate uniqueness of user_name on profiles_
 
@@ -107,6 +107,8 @@
 
 
 ## Ongoing To-DO
+
+### - [ ] Complete README 
 
 - [ ] add bio field to profile forms
 
