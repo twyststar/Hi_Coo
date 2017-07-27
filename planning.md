@@ -33,6 +33,7 @@
 ## Validations
 
 - [x]  _Haiku must validate at 5-7-5_
+
   ~~* This is validating that lines one and three are 4-6, and line two is 6-8, due to missing/extra syllables in the api results.~~ * Fixed validation issue by removing api and using ruby-rhymes gem.
 
 - [x]  _Comments/discussion on haiku can be plain language, validate for length_
@@ -47,6 +48,8 @@
 
 
 ## Appearance/Pages
+
+- [ ] reorder all grouped hicoo so most recent appear at the top
 
 - [ ] style profile page
 
@@ -107,7 +110,7 @@
 
 - [ ] add cover photo to profile
 
-- [ ] add photo to hicoo
+- [x] add photo to hicoo
 
 - [x] make main displays' hi coo clickable to show
 
@@ -146,6 +149,7 @@
 
 ## Stretch
 
+  * Scoped pages to order by most recent, most liked, most commented.
   * Search Field in menu bar
   * Hi-coo Field in menu bar?
   * Likes as join between users and hi-coos?
@@ -153,13 +157,24 @@
   * Animations
   - [x] Photos to certain categories?
       * Added optional pic to all hicoo.
-      
+
   * Add collapsing menu for About, History?
   * Add collapsing menu for profile actions- sessions, edit etc?
 
-## Current notes:
+<!-- ## Current notes:
 
-* Words api endpoint:
+How can i make things update instantly one I've gone live? I'm assuming some sort of ajax refresh call, and moving the home hicoo into a partial to call it on.
+
+
+
+
+
+
+
+
+-->
+
+<!-- * Words api endpoint:
 
 https://wordsapiv1.p.mashape.com/words/{word}/syllables
 
@@ -168,7 +183,7 @@ https://wordsapiv1.p.mashape.com/words/incredible/syllables,
   headers:{
     "X-Mashape-Key" => "KEYHERE",
     "Accept" => "application/json"
-  }
+  } -->
 
 <!-- Api call for syllable count example. Refactored to use ruby_rhymes gem instead, but keeping a note of it here in case it is useful later.
   # count = 0
