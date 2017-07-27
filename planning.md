@@ -11,6 +11,7 @@
         * Hi-Quote_line_one
         * Hi-Quote_line_two
         * Hi-Quote_line_three
+        * Bio
 
 - [x] Haikus - belongs to Profile
 
@@ -19,6 +20,7 @@
         * line_two
         * line_three
         * author
+        * pic - paperclip
 
 - [x] Comments - belongs to Haikus, belongs to Profile - polymorphic?
 
@@ -31,10 +33,13 @@
 ## Validations
 
 - [x]  _Haiku must validate at 5-7-5_
-  * This is validating that lines one and three are 4-6, and line two is 6-8, due to missing/extra syllables in the api results.
+  ~~* This is validating that lines one and three are 4-6, and line two is 6-8, due to missing/extra syllables in the api results.~~ * Fixed validation issue by removing api and using ruby-rhymes gem.
 
 - [x]  _Comments/discussion on haiku can be plain language, validate for length_
 
+    * These validations also cover presence of, as an empty field has no syllables.
+
+- [x] _Validate uniqueness of user_name on profiles_
 
 ## Authentication
 
@@ -48,10 +53,6 @@
 - [ ] style display boxes for hi coo throughout
 
 - [ ] add About page, History page
-
-- [ ] add collapsing menu for About, History?
-
-- [ ] add collapsing menu for profile actions- sessions, edit etc?
 
 - [ ] remove hicoo index(now on home)
 
@@ -150,8 +151,11 @@
   * Likes as join between users and hi-coos?
   * Seeds for beginning haiku
   * Animations
-  * Photos to certain categories?
-
+  - [x] Photos to certain categories?
+      * Added optional pic to all hicoo.
+      
+  * Add collapsing menu for About, History?
+  * Add collapsing menu for profile actions- sessions, edit etc?
 
 ## Current notes:
 
