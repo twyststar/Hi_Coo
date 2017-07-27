@@ -12,6 +12,12 @@
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <h1 class='headline'><%= link_to 'Hi Coo!', '/' %></h1>
       <ul class="nav navbar-nav navbar-left">
+        <li>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </li>
         <% if current_user && current_user.admin %>
           <li><%= link_to 'Admin', rails_admin_path %></li>
         <% end %>
@@ -20,7 +26,6 @@
       <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Home", home_index_path %></li>
           <% if current_user %>
-          <li><%= link_to 'All Coo', hicoos_path %></li>
           <li><%= link_to 'All Poets', profiles_path %></li>
           <li><%= link_to 'My Profile', profile_path(current_user.id) %></li>
 

@@ -1,6 +1,32 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// Layout/navbar styles
+
+#navbar-collapse-1{
+  background-color: white;
+  padding-bottom: .1%;
+  border-bottom: 1px ridge red;
+  box-shadow: 2px 5px 2px #c9c9c9;
+}
+
+.form-inline{
+  padding-top: 4%;
+}
+
+.headline {
+  margin-bottom: -5%;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Ceviche One', cursive;
+  a {
+    color: red;
+  }
+}
+
+
+// Image styles- non page specific
+
 .round-image-50{
   margin-right: 2%;
   background-color: white;
@@ -28,11 +54,28 @@
   text-align: center;
   img { width: 100% }
 }
-.front_img {
-  width: 100%;
-  height: auto;
 
+// General/misc styles not page specific
+
+body {
+  background-color: #a5a4a4;
 }
+
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
+.well {
+  margin-left: -4%;
+  margin-right: -4%;
+  background-color: white;
+  margin-bottom: -.2%;
+}
+
+// Splash page styles
 
 .splash-header {
   background-image: url('red-hicoo.jpg');
@@ -71,53 +114,7 @@
   }
 }
 
-
-.main-page-post-header{
-  background-color: #e0e0e0;
-
-}
-
-.headline {
-  margin-bottom: -5%;
-  font-size: 2em;
-  text-align: center;
-  font-family: 'Ceviche One', cursive;
-  a {
-    color: red;
-  }
-}
-
-body {
-  background-color: #a5a4a4;
-}
-
-#navbar-collapse-1{
-  background-color: white;
-  padding-bottom: .1%;
-  border-bottom: 1px ridge red;
-  box-shadow: 2px 5px 2px #c9c9c9;
-}
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-.well {
-  margin-left: -4%;
-  margin-right: -4%;
-  background-color: white;
-  margin-bottom: -.2%;
-
-  // min-height: 200px;
-  // h2{
-  //   padding-left: 5%;
-  // }
-}
-
+// Home index page styles
 
 .panel-profile {
   position: static;
@@ -126,11 +123,13 @@ body {
 .pro-heading {
   height: 120px;
 }
+
 .panel {
   .panel-heading{
     background-color: red;
   }
 }
+
 .panel-profile-img{
   background-color: white;
   border: 1px solid #d9d9d9;
@@ -145,6 +144,9 @@ body {
   float: left;
 }
 
+.main-page-post-header{
+  background-color: #e0e0e0;
+}
 
 .mini-coo-box {
   text-align: center;
@@ -168,6 +170,37 @@ body {
   }
 }
 
+// Profile show page styles
+
+.profile-banner {
+  position: relative;
+  img {
+  }
+}
+
+.profile-pic{
+  margin-right: 2%;
+  background-color: white;
+  border: 3px solid #525354;
+  display: inline-block;
+  position: relative;
+  top: -100px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  img {
+    width: auto;
+  height: 100%;
+  margin-left: -50px;
+  }
+}
+.profile-cover {
+  width: 1300px;
+  margin-left: -6%;
+}
 .profile-box {
   background-color: white;
   margin-top: 1%;
@@ -187,6 +220,9 @@ body {
 }
 
 
+
+
+// Form/ajax styles
 #new_hicoo {
   display: none;
 }
@@ -194,7 +230,3 @@ body {
 #new_comment_form {
   display: none;
 }
-
-// a {
-//   color: #a3a3a3;
-// }

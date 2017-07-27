@@ -1,3 +1,14 @@
+
+<div class="profile-banner">
+  <%= image_tag(@profile.cover(:large), :class => 'profile-cover') %>
+  <div class="profile-pic-div">
+    <%= image_tag(@profile.avatar(:medium), :class => 'profile-pic') %>
+  </div>
+</div>
+
+
+
+
 <div class="row">
   <div class="col-xs-7 profile-coo">
     <% if @profile.hicoos.any? %>
@@ -60,9 +71,6 @@
   <!-- Profile side -->
 
   <div class="col-xs-5 profile-box">
-    <% if @profile.cover? %>
-      <%= image_tag(@profile.cover(:thumb)) %>
-    <% end %>
     <% if current_user.id == @profile.user_id %>
     <h1>Welcome, <%= current_user.profile.user_name %>!</h1>
     <%= image_tag(@profile.avatar(:medium)) %>

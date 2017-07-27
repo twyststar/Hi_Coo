@@ -24,7 +24,7 @@
         * author
         * pic - paperclip
 
-- [x] Comments - belongs to Haikus, belongs to Profile - polymorphic?
+- [x] Comments - belongs to Hicoos
 
         * content
         * author
@@ -40,7 +40,7 @@
 
   * These validations also cover presence of, as an empty field has no syllables.
 
-- [x]  _Comments/discussion on haiku can be plain language, validate for length_
+- [x]  _Comments/discussion on haiku can be plain language, validate for length (250 char)_
 
 - [x] _Validate uniqueness of user_name on profiles_
 
@@ -50,6 +50,8 @@
 
 
 ## Appearance/Pages
+
+- [ ] title bar icon
 
 - [ ] style profile page
 
@@ -114,6 +116,8 @@
 
 ### - [ ] Complete README
 
+- [ ] alert hello on sign-up?
+
 - [ ] display most recent hicoo first
 
 - [ ] ajax form to profile edit
@@ -123,6 +127,8 @@
 - [ ] add delete ability to owned hicoo/comments
 
 - [ ] make profile displays' hi coo clickable to show
+
+- [x] organize scss
 
 - [x] add bio field to profile forms
 
