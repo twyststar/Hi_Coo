@@ -102,11 +102,15 @@
 
 - [ ] add delete ability to owned hicoo/comments
 
-- [ ] make main displays' hi coo clickable to show
+- [ ] make profile displays' hi coo clickable to show
 
 - [ ] add cover photo to profile
 
 - [ ] add photo to hicoo
+
+- [x] make main displays' hi coo clickable to show
+
+- [x] make main displays' hi coo AUTHOR clickable to show
 
 - [x] add title field to hi coo
 

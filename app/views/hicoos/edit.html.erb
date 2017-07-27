@@ -1,31 +1,3 @@
 <h2>We will edit haikus here</h2>
 
-<%= form_for @hicoo do |f| %>
-  <%= f.hidden_field :profile_id, :value => current_user.profile.id %>
-  <%= f.hidden_field :author, :value => current_user.profile.user_name %>
-
-  <div class="form-group">
-    <%= f.label :title  %>
-    <%= f.text_field :title, autofocus: true, class: 'form-control'  %>
-  </div>
-  
-  <div class="form-group">
-    <%= f.label :line_one  %>
-    <%= f.text_field :line_one, autofocus: true, class: 'form-control'  %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :line_two  %>
-    <%= f.text_field :line_two, autofocus: true, class: 'form-control'  %>
-  </div>
-
-  <div class="form-group">
-    <%= f.label :line_three  %>
-    <%= f.text_field :line_three, autofocus: true, class: 'form-control'  %>
-  </div>
-
-  <div class="form-group">
-    <%= f.submit "Update", class: "btn btn-primary" %>
-  </div>
-
-<% end %>
+<%= render "form" %>
