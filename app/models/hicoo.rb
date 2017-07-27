@@ -10,6 +10,11 @@ class Hicoo < ApplicationRecord
   validate :verify_line_two
   validate :verify_line_three
 
+  has_attached_file :pic, :styles => { :medium => "250x250>", :thumb => "100x100#" }
+  
+  validates_attachment_content_type :pic, :content_type => /\Aimage\/.*\Z/
+
+
   def verify_line_one
     if line_one == ""
       errors.add(:line_one, "Line one must be present")

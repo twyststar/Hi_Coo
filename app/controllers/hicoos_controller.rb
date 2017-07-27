@@ -28,7 +28,7 @@ class HicoosController < ApplicationController
       flash[:notice] = "Wrong number of syllables!"
       redirect_to home_index_path
     end
-     
+
   end
 
 
@@ -52,6 +52,6 @@ class HicoosController < ApplicationController
   private
 
   def hicoo_params
-    params.require(:hicoo).permit(:line_one, :line_two, :line_three, :author, :profile_id, :title)
+    params.require(:hicoo).permit(:line_one, :line_two, :line_three, :author, :profile_id, :title, :pic)
   end
 end

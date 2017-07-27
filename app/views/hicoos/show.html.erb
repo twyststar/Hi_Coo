@@ -1,6 +1,9 @@
 
 
 <div class="well">
+  <% if @hicoo.pic? %>
+    <%= image_tag(@hicoo.pic(:medium)) %>
+  <% end %>
   <h2><%= @hicoo.line_one %></h2>
   <h2><%= @hicoo.line_two %></h2>
   <h2><%= @hicoo.line_three %></h2>
