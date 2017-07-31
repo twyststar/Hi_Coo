@@ -55,11 +55,9 @@
 
 - [ ] style profile page
 
-- [ ] add large cover to profile
+- [x] add large cover to profile
 
-- [ ] add bio to profile
-
-- [ ] display cover photo on profile
+- [x] display cover photo on profile
 
 - [ ] display cover photo on mini profile
 
@@ -71,11 +69,7 @@
 
 - [ ] add About page, History page
 
-- [ ] remove hicoo index(now on home)
-
-- [ ] remove unneeded routes
-
-- [ ] style home page
+- [x] remove hicoo index(now on home)
 
 - [x] style splash page
 
@@ -116,6 +110,10 @@
 
 ### - [ ] Complete README
 
+- [ ] remove unneeded routes
+
+- [ ] add default user_name to profile
+
 - [ ] alert hello on sign-up?
 
 - [ ] display most recent hicoo first
@@ -127,6 +125,8 @@
 - [ ] add delete ability to owned hicoo/comments
 
 - [ ] make profile displays' hi coo clickable to show
+
+- [x] add bio to profile
 
 - [x] organize scss
 
